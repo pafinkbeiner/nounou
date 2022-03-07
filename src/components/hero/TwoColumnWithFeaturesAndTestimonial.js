@@ -49,24 +49,22 @@ export default ({
     quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     customerName: "Charlotte Hale",
     customerCompany: "Delos Inc."
-  }
+  },
+  navigation = [{name: "Features", url: "#"}, {name: "Pricing", url: "#"}, {name: "Testimonials", url: "#"}, {name: "Support", url: "#"}]
 }) => {
   const buttonRoundedCss = buttonRounded && tw`rounded-full`;
   const navLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Pricing</NavLink>
-      <NavLink href="/#">Contact Us</NavLink>
-      <NavLink href="/#">Testimonials</NavLink>
+      {
+        navigation.map(n => {
+          return (
+            <NavLink key={n.name} href={n.url}>{n.name}</NavLink>
+          )
+        })
+      }
     </NavLinks>,
     <NavLinks key={2}>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={buttonRoundedCss} href="/#">
-        Sign Up
-      </PrimaryLink>
+
     </NavLinks>
   ];
   return (

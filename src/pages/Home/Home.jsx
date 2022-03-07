@@ -15,25 +15,25 @@ const Home = () => {
     const [navigationData, setNavigationData] = useState([{name: "Features", url: "#"}, {name: "Pricing", url: "#"}, {name: "Testimonials", url: "#"}, {name: "Support", url: "#"}])
 
     const [heroData, setHeroData] = useState({
-        heading: "Better, Faster and Cheaper Cloud.",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+        heading: "",
+        description: "",
         imageSrc: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
         imageDecoratorBlob: true,
-        primaryButtonUrl: "https://google.com",
-        primaryButtonText: "Get Started",
+        primaryButtonUrl: "",
+        primaryButtonText: "",
         buttonRounded: true,
-        features: ["Available in 7 Locations", "Premium Internet Backbone", "99.99% Uptime SLA"],
+        features: [],
         testimonial: {
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            customerName: "Charlotte Hale",
-            customerCompany: "Delos Inc."
+            quote: "",
+            customerName: "",
+            customerCompany: ""
         }
     })
 
     const [statsData, setStatsData] = useState({
         subheading: "",
-        heading: "Over 9000 Projects Completed",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        heading: "",
+        description: "",
         stats: [
             {
                 key: "Clients",
