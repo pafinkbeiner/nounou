@@ -104,6 +104,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "pages/Home/Home.jsx";
+import Rooms from "pages/Rooms/Rooms";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -114,6 +115,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/Rooms" element={<Rooms/>} />
       </Routes>
     </Router>
   );
